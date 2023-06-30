@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* SUPERIOR */
+#fullStamp {
+    cursor: pointer;
+}
+/* SUPERIOR */
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#contacto {
+    min-height: 390px;
+    padding: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 225px;
+    border: 0;
+    border-radius: 10px;
+    border: 2px solid #005B25;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+#direccionIn p {
+    width: 150px;
+}
+
+#telefonoIn p {
+    width: 150px;
+}
+
+#emailIn p {
+    font-size: small;
+}
+
+#direccion {
+    width: 166px;
+    height: 166px;
+    position: absolute;
+    bottom: 110px;
+    left: 75px;
+    border-radius: 100px;
+    background-color:#008F39;
+    border: 2px solid #005B25;
+}
+
+#direccionIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#telefono {
+    width: 166px;
+    height: 166px;
+    position: absolute;
+    bottom: 110px;
+    left: 317px;
+    border-radius: 100px;
+    background-color:#008F39;
+    border: 2px solid #005B25;
+}
+
+#telefonoIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#email {
+    width: 166px;
+    height: 166px;
+    position: absolute;
+    bottom: 110px;
+    right: 75px;
+    border-radius: 98px;
+    background-color:#008F39;
+    border: 2px solid #005B25;
+}
+
+#emailIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#pedido, #reclamo {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#008F39;
+    border:2px solid #005B25;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#pedido {
+    left: 0;
+    margin-left: 30px;
+}
+
+#reclamo {
+    right: 0;
+    margin-right: 30px;
+}
+/* CUERPO */

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* SUPERIOR */
+#fullStamp {
+    cursor: pointer;
+}
+/* SUPERIOR */
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#preguntas {
+    min-height: 390px;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 100%;
+    padding: 0 0 30px;
+}
+
+#preguntas li {
+    padding: 0 0 10px;
+}
+
+#preguntas p:first-letter {
+    margin-left: 30px;
+}
+
+h3, .mostrar {
+    display: inline;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+}
+
+.mostrar, .ocultar {
+    cursor: pointer;
+}
+
+.respuesta, .ocultar {
+    display: none;
+}
+
+.respuesta {
+    margin-left: 15px;
+    text-align: justify;
+}
+
+ul, li {
+    list-style: none;
+}
+/* CUERPO */

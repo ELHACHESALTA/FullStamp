@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* SUPERIOR */
+#fullStamp {
+    cursor: pointer;
+}
+/* SUPERIOR */
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#carrito {
+    min-height: 390px;
+    padding: 30px;
+}
+
+#articulos-container {
+    width: 500px;
+    margin: auto;
+}
+
+.tarjeta-articulo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.tarjeta-articulo img {
+    height: 100px;
+}
+
+.tarjeta-articulo h3 {
+    width: 130px;
+}
+
+#totales, #carroVacio {
+    text-align: center;
+}
+
+h3, p {
+    margin: 5px 0;
+}
+
+.buttonCarro {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 100%;
+}
+
+#carrito button {
+    background-color: #000000;
+    color: #008F39;
+    padding: 8px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px #000000;
+    padding: 10px;
+}
+
+.botonesCarrito {
+    font-size: 30px;
+}
+
+.escondido {
+    display: none;
+}
+
+#articulos-container {
+    width: 800px;
+    text-align:center;
+}
+
+.tarjeta-articulo {
+    width: 580px;
+    height: 40px;
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: #008F39;
+    border: 1px solid #005B25;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #005B25;
+}
+
+.tarjeta-articulo img {
+    width: 40px;
+    height: 100%;
+    border: 1px solid #005B25;
+    box-shadow: 0 0 5px #005B25;
+}
+
+.tarjeta-articulo h3 {
+    width: 550px;
+}
+
+.tarjeta-articulo p {
+    width: 115px;
+}
+
+.tarjeta-articulo div {
+    height: 40px;
+    padding: 15px 10px 5px 10px;
+    background-color: #008F39;
+    border: 1px solid #005B25;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #005B25;
+    position: absolute;
+    right: 40px;
+}
+
+.totales {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* CUERPO */

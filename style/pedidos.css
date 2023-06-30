@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* SUPERIOR */
+#fullStamp {
+    cursor: pointer;
+}
+/* SUPERIOR */
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#pedidos {
+    min-height: 390px;
+    padding: 30px;
+}
+
+#pedidos p:first-letter {
+    margin-left: 30px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 100%;
+    padding: 0 0 30px;
+}
+
+p {
+    margin: 0 0 15px;
+    text-align: justify;
+}
+
+#obligatorios {
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+td {
+    padding: 0 10px;
+    width: 50%;
+}
+
+#pedidos tr {
+    height: auto;
+}
+
+input {
+    width: 300px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+select {
+    width: 300px;
+    height: 30px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+#formNombreError, #formApellidoError,
+#formTelefono, #formTelefonoError,
+#formEmail, #formEmailError,
+#grupo_formFecha, #formFechaError,
+#formCantidadMonto, #formCantidadError, #formMontoError,
+#formTextAreaError {
+    display: none;
+}
+
+#formCantidadError {
+    height: 54px;
+}
+
+#opcionCliente {
+    height: 58px;
+}
+
+#inputRadioSi, #inputRadioNo {
+    vertical-align: middle;
+    display: inline;
+    margin: 0 10px;
+}
+
+#compraSi, #compraNo {
+    width: initial;
+    height: initial;
+    vertical-align: middle;
+    display: inline;
+}
+
+#detalle {
+    font-weight: bold;
+}
+
+#formDia, #formMes, #formAnio {
+    width: 90px;
+    margin: 5px;
+}
+
+#formVacio, #formTelefono, #formEmail {
+    margin: 28.4px 0 10px;
+}
+
+textarea {
+    width: 620px;
+    height: 120px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 10px 0;
+    resize: none;
+}
+
+#formBotones {
+    height: 32px;
+}
+
+#formularioPedidos button {
+    float: right;
+    margin-right: 33px;
+    width: 105px;
+    height: 32px;
+    border-radius: 16px;
+    background-color:#008F39;
+    border:2px solid #005B25;
+    cursor: pointer;
+}
+
+#formEnvioExito {
+    background-color: #008F39;
+    border:2px solid #005B25;
+    text-align: center;
+    border-radius: 15px;
+    width: 675px;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto 0;
+    display: none;
+}
+
+#formEnvioError {
+    background-color: #FFB6C1;
+    border: 2px solid #A51212;
+    text-align: center;
+    border-radius: 15px;
+    width: 675px;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto 0;
+    display: none;
+}
+
+.formGrupo {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 35px;
+    right: 26px;
+    visibility: hidden;
+}
+
+.formGrupo-correcto .formValidacion-estado {
+    color: #1ED12D;
+    visibility: visible;
+}
+
+.formGrupo-incorrecto .formValidacion-estado {
+    color: #A51212;
+    visibility: visible;
+}
+
+.formGrupo-incorrecto .formInput {
+    border: 2px solid #A51212;
+}
+
+.formInput-error {
+    color: #A51212;
+    font-weight: bold;
+}
+/* CUERPO */

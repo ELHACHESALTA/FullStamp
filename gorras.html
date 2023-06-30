@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Gorras</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="style/gral.css" title="style">
+        <link rel="stylesheet" type="text/css" href="style/gorras.css" title="style">
+    </head>
+    <body>
+        <div id="principal" class="dark">
+
+            <div id="superior">
+                <div id="barraSuperior">
+                    <div id="fullStamp" onclick="irIndex()">FullStamp</div>
+                    <div id="categorias">
+                        <ul>
+                            <li><a href="remeras.html">REMERAS</a></li>
+                            <li>|</li>
+                            <li><a href="buzos.html">BUZOS</a></li>
+                            <li>|</li>
+                            <li><a href="gorras.html">GORRAS</a></li>
+                        </ul>
+                    </div>
+                    <button id="modoClaro">Modo Claro</button>
+                    <button id="modoOscuro">Modo Oscuro</button>
+                    <a href="carrito.html">
+                        <img src="img/darkCarro.svg" alt="carro" id="carro">
+                    </a>
+                    <span id="cuentaCarro">0</span>
+                </div>
+            </div>
+
+            <div id="cuerpo">
+                <div id="centro">
+                    <div id="banner">
+                        <div id="titulo">Gorras</div>
+                    </div>
+                    <div id="tienda">
+                        <div id="articulos-container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pie">
+                <div id="barraPie">
+                    <img src="img/favicon.png" alt="Full Stamp" id="logo">
+                    <div id="descripcion">
+                        Full Stamp ®
+                        <br>
+                        Lideres en sublimados y estampados al mejor precio.
+                    </div>
+                    <div id="redes">
+                        <img src="img/darkInsta.svg" alt="Instagram" onclick="goInsta()">
+                        <img src="img/darkFace.svg" alt="Facebook" onclick="goFace()">
+                        <img src="img/darkWhats.svg" alt="WhatsApp" onclick="goWhats()">
+                        <img src="img/darkEmail.svg" alt="Email" onclick="goEmail()">
+                    </div>
+                    <div id="secciones">
+                        <table>
+                            <tr>
+                                <td><a href="nosotros.html">Nosotros</a></td>
+                                <td><a href="contacto.html">Contacto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pedidos.html">Pedidos</a></td>
+                                <td><a href="reclamos.html">Reclamos</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="preguntas.html">Preguntas Frecuentes</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/gral.js"></script>
+            <script src="js/articulos.js"></script>
+            <script src="js/carritoFuncionalidad.js"></script>
+            <script src="js/gorras.js"></script>
+            <script src="js/modoClaroOscuro.js"></script>
+
+        </div>
+    </body>
+</html>

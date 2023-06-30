@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#tiendaRemeras {
+    height: 150px;
+    background-image: url(../img/yellowBanner.png);
+}
+
+#tiendaBuzos {
+    height: 150px;
+    background-image: url(../img/blueBanner.png);
+}
+
+#tiendaGorras {
+    height: 150px;
+    background-image: url(../img/orangeBanner.png);
+}
+
+#titulo1, #titulo2, #titulo3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    line-height: 150px;
+    position: absolute;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+#titulo1, #titulo3 {
+    left: 45px;
+}
+
+#titulo2 {
+    right: 45px;
+}
+/* CUERPO */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Reclamos</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="style/gral.css" title="style">
+        <link rel="stylesheet" type="text/css" href="style/reclamos.css" title="style">
+    </head>
+    <body>
+        <div id="principal" class="dark">
+
+            <div id="superior">
+                <div id="barraSuperior">
+                    <div id="fullStamp" onclick="irIndex()">FullStamp</div>
+                    <div id="categorias">
+                        <ul>
+                            <li><a href="remeras.html">REMERAS</a></li>
+                            <li>|</li>
+                            <li><a href="buzos.html">BUZOS</a></li>
+                            <li>|</li>
+                            <li><a href="gorras.html">GORRAS</a></li>
+                        </ul>
+                    </div>
+                    <button id="modoClaro">Modo Claro</button>
+                    <button id="modoOscuro">Modo Oscuro</button>
+                    <a href="carrito.html">
+                        <img src="img/darkCarro.svg" alt="carro" id="carro">
+                    </a>
+                    <span id="cuentaCarro">0</span>
+                </div>
+            </div>
+
+            <div id="cuerpo">
+                <div id="centro">
+                    <div id="reclamos">
+                        <h1>Formulario de reclamos</h1>
+                        <p>Describa su reclamo con la mayor cantidad de detalles que le sea posible, para que nuestro equipo pueda brindarle una solución acorde en el menor tiempo posible.</p>
+                        <p>En caso de cambios o devoluciones, no olvide de colocar todos los datos de su factura en el área de Descripción del reclamo.</p>
+                        <p id="obligatorios">Los campos marcados con (*) son obligatorios.</p>
+                        <form action="#" id="formularioReclamos">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="formGrupo" id="grupo_formNombre">
+                                            Ingrese su/s nombre/s:
+                                            <div class="formGrupo-estado">
+                                                <input type="text" class="formInput" name="formNombre" id="formNombre" maxlength="30">
+                                                <i class="formValidacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formGrupo" id="grupo_formApellido">
+                                            Ingrese su/s apellido/s:
+                                            <div class="formGrupo-estado">
+                                                <input type="text" class="formInput" name="formApellido" id="formApellido" maxlength="30">
+                                                <i class="formValidacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="formInput-error" id="formNombreApellidoError">Los campos de nombre y apellido no son obligatorios, en caso que desees agregar uno o ambos, éstos solo puede contener letras y 30 caracteres como máximo.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="formGrupo">
+                                            Método de contacto (*):
+                                            <select name="opcionesContacto" id="opcionesContacto">
+                                                <option value="opc0">Seleccione una opción</option>
+                                                <option value="opc1">Teléfono / Celular</option>
+                                                <option value="opc2">Email</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formGrupo" id="grupo_formContacto">
+                                            <div class="formGrupo-estado">
+                                                <input type="text" class="formInput" name="formVacio" id="formVacio" disabled>
+                                                <input type="text" class="formInput" name="formTelefono" id="formTelefono" maxlength="10">
+                                                <input type="text" class="formInput" name="formEmail" id="formEmail">
+                                                <i class="formValidacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <p class="formInput-error" id="formTelefonoError">Debe contener 10 dígitos numéricos, ingresando el código de área sin 0 y el número de celular sin 15 cuando corresponda.</p>
+                                        <p class="formInput-error" id="formEmailError">Solo puede contener caracteres alfanuméricos, puntos, guiones bajos y/o guiones altos.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="formGrupo" id="grupo_formTextArea">
+                                            Descripción del reclamo (*):
+                                            <textarea class="formInput" name="formTextArea" id="formTextArea" placeholder="Por favor, sea lo mas detallado posible en lo que está buscando."></textarea>
+                                            <i class="formValidacion-estado fas fa-times-circle"></i>
+                                            <div class="formInput-error" id="formTextAreaError">La descripción del reclamo no puede quedar vacía.</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="formBotones">
+                                <button type="submit" id="formEnviar">Enviar</button>
+                                <button id="formCancelar" onclick="cancelarFormulario()">Cancelar</button>
+                            </div>
+                            <div id="formEnvioExito">Su reclamo ha sido enviado.</div>
+                            <div id="formEnvioError">Revise los campos e intente nuevamente.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pie">
+                <div id="barraPie">
+                    <img src="img/favicon.png" alt="Full Stamp" id="logo">
+                    <div id="descripcion">
+                        Full Stamp ®
+                        <br>
+                        Lideres en sublimados y estampados al mejor precio.
+                    </div>
+                    <div id="redes">
+                        <img src="img/darkInsta.svg" alt="Instagram" onclick="goInsta()">
+                        <img src="img/darkFace.svg" alt="Facebook" onclick="goFace()">
+                        <img src="img/darkWhats.svg" alt="WhatsApp" onclick="goWhats()">
+                        <img src="img/darkEmail.svg" alt="Email" onclick="goEmail()">
+                    </div>
+                    <div id="secciones">
+                        <table>
+                            <tr>
+                                <td><a href="nosotros.html">Nosotros</a></td>
+                                <td><a href="contacto.html">Contacto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pedidos.html">Pedidos</a></td>
+                                <td><a href="reclamos.html">Reclamos</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="preguntas.html">Preguntas Frecuentes</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/gral.js"></script>
+            <script src="js/reclamos.js"></script>
+            <script src="js/carritoFuncionalidad.js"></script>
+            <script src="https://kit.fontawesome.com/5dae84daaf.js" crossorigin="anonymous"></script>
+            <script src="js/modoClaroOscuro.js"></script>
+
+        </div>
+    </body>
+</html>

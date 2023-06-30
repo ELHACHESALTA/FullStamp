@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+#principal {
+    width: 100%;
+    min-width: 1000px;
+    background-image: url(../img/darkFondo.png);
+}
+
+/* SUPERIOR */
+#superior {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    background-color: #008F39;
+    box-shadow: 0 0 10px #000000;
+}
+
+#barraSuperior {
+    width: 800px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+#fullStamp {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+#barraSuperior ul {
+    list-style: none;
+    height: 100%;
+}
+
+#barraSuperior li {
+    display: inline;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+#barraSuperior a {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#categorias {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#remeras, #buzos, #gorras {
+    display: inline-block;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 50px;
+    margin: 0 10px;
+    position: relative;
+}
+
+#modoClaro, #modoOscuro {
+    width: 105px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(0, -50%);
+	border-radius: 16px;
+	cursor:pointer;
+	padding: 7px 7px;
+}
+
+#modoClaro {
+    background-color:#00B347;
+    border:2px solid #005B25;
+}
+
+#modoOscuro {
+    background-color:#008F39;
+    border:2px solid #005B25;
+    display: none;
+}
+
+#carro {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+#cuentaCarro {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    min-width: 12px;
+    height: 12px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #FF8C00;
+    border-radius: 10px;
+}
+/* SUPERIOR */
+
+/* PIE */
+#pie {
+    width: 100%;
+    position: relative;
+    background-color: #005B25;
+}
+
+#barraPie {
+    width: 800px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+#descripcion {
+    font-family: 'Permanent Marker', cursive;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translate(0, -50%);
+}
+
+#redes {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#redes img{
+    width: 40px;
+    margin: 0 5px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+#secciones {
+    width: 290px;
+    position: absolute;
+    right: 15px;
+}
+
+#secciones table {
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bold;
+}
+
+tr {
+    height: 50px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+/* PIE */

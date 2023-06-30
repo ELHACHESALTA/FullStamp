@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Oculto la barra de desplazamiento */
+::-webkit-scrollbar {
+    display:none;
+}
+
+/* SUPERIOR */
+#fullStamp {
+    cursor: pointer;
+}
+/* SUPERIOR */
+
+/* CUERPO */
+#cuerpo {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#centro {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 50px #000000;
+    background-color: rgba(0,179,71,95%);
+}
+
+#banner {
+    height: 150px;
+    background-image: url(../img/darkBanner.png);
+}
+
+#titulo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    line-height: 150px;
+    position: absolute;
+    left: 45px;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+#nosotros {
+    min-height: 240px;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    padding: 0 0 10px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 15px;
+    padding: 0 0 10px;
+}
+
+p:first-letter {
+    margin-left: 30px;
+}
+
+#cita {
+    border: 2px solid #000000;
+    border-radius: 70px 0 70px 0;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px 80px;
+}
+
+.nosotros_div {
+    height: 222px;
+    margin-bottom: 20px;
+}
+
+#nosotros li {
+    margin-left: 15px;
+    padding: 0 0 10px;
+    list-style-position: inside;
+}
+
+.nosotros1 {
+    float: left;
+    height: 210px;
+    margin-right: 30px;
+    background-color: #000000;
+    box-shadow: 0 0 30px #000000;
+    overflow: hidden;
+}
+
+#nosotros1_img {
+    position: relative;
+    right: 300px;
+    height: 210px;
+}
+
+#nosotros2 {
+    float: right;
+    height: 210px;
+    margin-left: 30px;
+    background-color: #000000;
+    box-shadow: 0 0 30px #000000;
+    overflow: hidden;
+}
+
+#nosotros2_img {
+    position: relative;
+    left: 300px;
+    height: 210px;
+}
+
+#nosotros3_img {
+    position: relative;
+    right: 400px;
+    height: 210px;
+}
+/* CUERPO */

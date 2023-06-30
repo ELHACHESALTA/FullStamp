@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Preguntas Frecuentes</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="style/gral.css" title="style">
+        <link rel="stylesheet" type="text/css" href="style/preguntas.css" title="style">
+    </head>
+    <body>
+        <div id="principal" class="dark">
+
+            <div id="superior">
+                <div id="barraSuperior">
+                    <div id="fullStamp" onclick="irIndex()">FullStamp</div>
+                    <div id="categorias">
+                        <ul>
+                            <li><a href="remeras.html">REMERAS</a></li>
+                            <li>|</li>
+                            <li><a href="buzos.html">BUZOS</a></li>
+                            <li>|</li>
+                            <li><a href="gorras.html">GORRAS</a></li>
+                        </ul>
+                    </div>
+                    <button id="modoClaro">Modo Claro</button>
+                    <button id="modoOscuro">Modo Oscuro</button>
+                    <a href="carrito.html">
+                        <img src="img/darkCarro.svg" alt="carro" id="carro">
+                    </a>
+                    <span id="cuentaCarro">0</span>
+                </div>
+            </div>
+
+            <div id="cuerpo">
+                <div id="centro">
+                    <div id="preguntas">
+                        <h1>Preguntas Frecuentes</h1>
+                        <ul>
+                            <li>
+                                <h3>¿Cuál es el mínimo de compra?</h3>
+                                <div id="mostrar1" class="mostrar" onclick = mostrarR1()>&#9660;</div>
+                                <div id="ocultar1" class="ocultar" onclick = ocultarR1()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta1" class="respuesta">
+                                <p>Nuestro servicio no tiene mínimo de compra. El precio varía en función de la cantidad de diseños iguales que se soliciten. No dudes en contactarte y recibir promociones acorde a tus necesidades.</p>
+                            </li>
+                            <li>
+                                <h3>¿Cuáles son los precios del servicio?</h3>
+                                <div id="mostrar2" class="mostrar" onclick = mostrarR2()>&#9660;</div>
+                                <div id="ocultar2" class="ocultar" onclick = ocultarR2()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta2" class="respuesta">
+                                <p>Los valores visibles en la tienda son por producto individual. Puedes rellenar el formulario de pedidos personalizados y estaremos enviándote un presupuesto a la brevedad.</p>
+                            </li>
+                            <li>
+                                <h3>¿Cuáles son los tiempos de producción?</h3>
+                                <div id="mostrar3" class="mostrar" onclick = mostrarR3()>&#9660;</div>
+                                <div id="ocultar3" class="ocultar" onclick = ocultarR3()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta3" class="respuesta">
+                                <p>Todos los artículos expuestos en la tienda están disponibles para venta online directa y el pedido se envía dentro de las 72hs hábiles posteriores. A su vez nuestros tiempos de producción son variables en función de la cantidad de diseños solicitados, pero esto no supera los 7 días entre la aprobación del presupuesto y el despacho del pedido.</p>
+                            </li>
+                            <li>
+                                <h3>¿Hacen envíos?</h3>
+                                <div id="mostrar4" class="mostrar" onclick = mostrarR4()>&#9660;</div>
+                                <div id="ocultar4" class="ocultar" onclick = ocultarR4()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta4" class="respuesta">
+                                <p>Si, hacemos envíos a todo el país y también exportamos! Contamos con logística diaria en Neuquén y una extensa red de distribución para cubrir todo el país.</p>
+                            </li>
+                            <li>
+                                <h3>¿Puedo cambiar algún artículo de mi pedido?</h3>
+                                <div id="mostrar5" class="mostrar" onclick = mostrarR5()>&#9660;</div>
+                                <div id="ocultar5" class="ocultar" onclick = ocultarR5()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta5" class="respuesta">
+                                <p>Si quieres hacer algún cambio debes enviarnos de vuelta el artículo que necesitas cambiar en su estado y empaque original sin haber sido usado. Una vez que lo hayamos recibido, ten enviaremos el nuevo artículo. No te olvides de llenar también el formulario de reclamo.</p>
+                            </li>
+                            <li>
+                                <h3>¿Cuantos días tengo para solicitar un cambio?</h3>
+                                <div id="mostrar6" class="mostrar" onclick = mostrarR6()>&#9660;</div>
+                                <div id="ocultar6" class="ocultar" onclick = ocultarR6()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta6" class="respuesta">
+                                <p>Tienes 30 días corridos desde que recibiste el pedido. Una vez transcurrido ese período, ya no se aceptan cambios de artículos.</p>
+                            </li>
+                            <li>
+                                <h3>¿Solicitar un cambio tiene algún costo?</h3>
+                                <div id="mostrar7" class="mostrar" onclick = mostrarR7()>&#9660;</div>
+                                <div id="ocultar7" class="ocultar" onclick = ocultarR7()>&#9650;</div>
+                            </li>
+                            <li id = "respuesta7" class="respuesta">
+                                <p>Si el cambio lo haces en el local, no tiene ningún costo. En caso de que el artículo deba ser enviado por correo o transporte, el comprador debe hacerse cargo de los gastos de envío y embalaje, tanto del artículo que debe enviar para el cambio como del artículo que se le envía nuevo.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pie">
+                <div id="barraPie">
+                    <img src="img/favicon.png" alt="Full Stamp" id="logo">
+                    <div id="descripcion">
+                        Full Stamp ®
+                        <br>
+                        Lideres en sublimados y estampados al mejor precio.
+                    </div>
+                    <div id="redes">
+                        <img src="img/darkInsta.svg" alt="Instagram" onclick="goInsta()">
+                        <img src="img/darkFace.svg" alt="Facebook" onclick="goFace()">
+                        <img src="img/darkWhats.svg" alt="WhatsApp" onclick="goWhats()">
+                        <img src="img/darkEmail.svg" alt="Email" onclick="goEmail()">
+                    </div>
+                    <div id="secciones">
+                        <table>
+                            <tr>
+                                <td><a href="nosotros.html">Nosotros</a></td>
+                                <td><a href="contacto.html">Contacto</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pedidos.html">Pedidos</a></td>
+                                <td><a href="reclamos.html">Reclamos</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="preguntas.html">Preguntas Frecuentes</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/gral.js"></script>
+            <script src="js/preguntas.js"></script>
+            <script src="js/carritoFuncionalidad.js"></script>
+            <script src="js/modoClaroOscuro.js"></script>
+
+        </div>
+    </body>
+</html>
